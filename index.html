@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Trivia App</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Londrina+Outline&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<section id="container">
+  <section id="trivia-night">
+    <i class="fa-solid fa-question"></i>
+    <div id="top"></div>
+    <h2 id="trivia">TRIVIA</h2>
+    <h2 class="londrina-outline-regular">NIGHT</h2>
+    <div id="bottom"></div>
+  </section>
+  <section id="category-and-level-ctr">
+    <label for="category">Choose a Category: </label>
+    <select name="category" id="category">
+      <option value="films">Films</option>
+      <option value="music">Music</option>
+      <option value="videogames">Video Games</option>
+      <option value="sports">Sports</option>
+      <option value="geography">Geography</option>
+      <option value="history">History</option>
+      <option value="celebrities">Celebrities</option>
+      <option value="animals">Animals</option>
+    </select>
+    <label for="difficulty">Choose your Difficulty: </label>
+    <select name="difficulty" id="difficulty">
+      <option value="easy">Easy</option>
+      <option value="medium">Medium</option>
+      <option  value="hard">Hard</option>
+    </select>
+    <label for="type-of-questions">What type of questions would you like? </label>
+    <select name="type" id="type-of-questions">
+      <option value="multiplechoice">Multiple Choice</option>
+      <option id="true-false" value="true/false">True or False</option>
+    </select>
+    <button id="start">Start</button>
+  </section>
+</section>
+<main id="game-container">
+  <header>
+    <h1>Films</h1>
+  </header>
+  <section id="q-ctr">
+    <h2 id="question"></h2>
+
+  </section>
+  <button id="next">Next</button>
+</main>
+<script src="trivia.js"></script>
+</body>
+</html>
+
+
